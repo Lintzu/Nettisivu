@@ -2,9 +2,31 @@
 <html>
 
 <head>
+
     <title> Nettisivu </title>
     <script src="script.js"></script>
     <style>
+        #myDIV {
+            border: 1px solid rgb(0, 0, 0);
+            -webkit-animation: mymove 5s infinite;
+            /* Safari 4.0 - 8.0 */
+            animation: mymove 5s infinite;
+            margin: 0 auto
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes mymove {
+            50% {
+                border: 15px solid lightgoldenrodyellow;
+            }
+        }
+
+        @keyframes mymove {
+            50% {
+                border: 15px solid lightgoldenrodyellow;
+            }
+        }
+
         body {
             background-image: url('images/ornaments_texture1129.jpg');
             background-position: center;
@@ -17,7 +39,6 @@
             font-size: 50px;
             color: lightgoldenrodyellow;
             text-align-last: center;
-            border: double;
             text-shadow: 2px 2px rgb(0, 0, 0);
         }
 
@@ -25,36 +46,58 @@
             font-size: 30px;
             color: lightgoldenrodyellow;
             text-align-last: left;
-            border-left: double;
-            border: 2px solid;
             padding: 20px;
             width: 300px;
             resize: both;
             overflow: auto;
         }
 
+        h3 {
+            font-size: 30px;
+            color: lightgoldenrodyellow;
+        }
+
         ul {
             font-size: 20px;
             color: lightgoldenrodyellow;
             text-align-last: left;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+        }
+        a {
+            color: lightgoldenrodyellow;
+        }
     </style>
 </head>
 
 <body>
-    <article>
-        <h1> Hey, i'm Linnea. </h1>
-    </article>
+    <div id="myDIV" class="container">
 
-    <h2> School Projects </h2>
-    <ul>
+        <article>
+            <h1> Hey, i'm Linnea. </h1>
+        </article>
 
-        <li> Coding </li>
-        <li> Programming </li>
+        <h2> School Projects </h2>
+        <ul>
 
-    </ul>
-    <p> </p>
-    <button onclick="runCode()">Click me</button>
+            <li> Coding </li>
+            <li> Programming </li>
+
+        </ul>
+        <p> </p>
+        <button onclick="runCode()">Click me</button>
+    </div>
+    <p><b><a href="https://github.com/Lintzu" target="_blank">This is a link to some of my projects</a></b></p>
+    <p><b><a href="https://www.facebook.com/linnea.pekkanen" target="_blank">This is a link to my facebook page</a></b></p>
+
+    <h3> About me: </h3>
+ <ul>          </ul>
 
 </body>
 
-</html> 
+</html>
